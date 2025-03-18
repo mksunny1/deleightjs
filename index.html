@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleight - The Lightweight Alternative to React</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <a href="./index.html"><img src="./logo.png" alt="Home" style="position: absolute; border-radius: 50%; width: 100px; height: 100px;"></a>
+        <div class="container">
+            <h1>Deleight</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="https://github.com/mksunny1/deleight/blob/main/tutorials.md">Tutorials</a></li>
+                    <li><a href="https://mksunny1.github.io/deleight-api-docs/main/modules/deleight.html">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Faster, Lighter, and More Powerful than React</h2>
+            <p>Deleight gives you full control with zero bloat.</p>
+            <a href="#get-started" class="cta-btn2">Try Deleight Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose Deleight?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Ultra Lightweight</h3>
+                    <p>Deleight is optimized for speed and efficiency, with a small footprint.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Native-Like Performance</h3>
+                    <p>With efficient updates, Deleight delivers smooth interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Simple & Flexible</h3>
+                    <p>No complex dependencies. Just pure JavaScript, optimized.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Easy Integrations</h3>
+                    <p>Deleight easily integrates into your existing codebase, allowing you to build or migrate without hassle.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Scalable Architecture</h3>
+                    <p>Whether you're building a small app or a large-scale system, Deleight scales seamlessly without introducing unnecessary complexity.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Native Event Handling</h3>
+                    <p>With Deleight's native event handling system, you can easily manage user interactions without relying on external libraries.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Modular and Expandable</h3>
+                    <p>Each module in Deleight is completely independent, allowing you to only use what you need, and extend it when required.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Zero Dependencies</h3>
+                    <p>Deleight is dependency-free, ensuring fewer bugs, better performance, and fewer maintenance headaches.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cross-browser Support</h3>
+                    <p>Deleight works flawlessly across modern browsers, ensuring your application runs smoothly for all users.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Reduced Boilerplate Code</h3>
+                    <p>Deleight’s concise syntax reduces repetitive code, making it quicker and easier to develop and maintain.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Flexible Data Binding</h3>
+                    <p>Deleight supports advanced data binding mechanisms that allow for easier state management, even with complex applications.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Full Control Over Rendering</h3>
+                    <p>With Deleight, you get full control over how and when the UI gets updated, giving you more flexibility in optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started">
+        <div class="container">
+            <h2>Getting Started</h2>
+            <section>
+                <h2>Step 1: Setting Up Your Project</h2>
+                <p>First, you need to set up a new Deleight project. Follow these steps:</p>
+                <ol>
+                <li>Create a new directory for your project.</li>
+                <li>Run <code class="language-sh">npm init</code> to create a new package.json file.</li>
+                <li>Install Deleight using <code class="language-sh">npm install deleight</code>.</li>
+                </ol>
+            </section>
+        
+            <section>
+                <h2>Step 2: Creating Your First Component</h2>
+                <p>Next, let's create a simple component. Deleight components are modular and reusable. Here's how to create one:</p>
+                <pre><code class="language-ts">import { hh } from 'deleight/dom/builder';
+const MyComponent = hh.h1('Hello, Deleight!');
+export default MyComponent;</code></pre>
+                <p>This component renders a simple "Hello, Deleight!" message to the screen.</p>
+            </section>
+        
+            <section>
+                <h2>Step 3: Rendering Your Component</h2>
+                <p>Now that you've created your component, let's render it to the screen. Add the following code to your main application file:</p>
+                <pre><code class="language-ts">import MyComponent from './MyComponent';
+MyComponent.appendTo(document.getElementById('app'));</code></pre>
+                <p>This will render your component inside the element with the ID of "app".</p>
+            </section>
+        
+            <section>
+                <h2>Congratulations</h2>
+                <p>Congratulations! You've just created your first Deleight app. From here, you can explore more advanced features like reactivity, state management, and component patterns. Check out our other tutorials to take your skills further!</p>
+            </section>
+        </div>
+    </section>
+
+    <section id="next-steps">
+        <div class="container">
+            <h2>Next Steps</h2>
+            <div>
+                <a href="https://github.com/mksunny1/deleight/blob/main/tutorials.md" class="cta-btn1">View Tutorials</a>
+                <a href="https://mksunny1.github.io/deleight-api-docs/main/modules/deleight.html" class="cta-btn1">Learn the APIs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 DeleightJS. Built for developers, by developers.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

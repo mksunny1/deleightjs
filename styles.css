@@ -103,9 +103,17 @@ main, article {
     margin-top: 20px;
 }
 
+.actions {
+    display: grid;
+}
+
 @media screen and (min-width: 768px) {
     .features-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .actions {
+        display: flex;
+        gap: 1rem;
     }
 }
 
